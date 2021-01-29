@@ -7,7 +7,6 @@
     "build": "next build",
     "export": "next export",
     "deploy": "run-s build export",
-    "preview": "next build && next export && surge ./out periodic-kitty.surge.sh",
     "pretty": "prettier src/**/*.js --write"
   },
   "dependencies": {
