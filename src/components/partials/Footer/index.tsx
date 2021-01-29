@@ -1,18 +1,18 @@
 export const Footer = () => (
   <footer
-    className="bg-primary-default z-10 relative"
+    className="relative z-10 bg-primary-default"
     aria-labelledby="footerHeading">
     <h2 id="footerHeading" className="sr-only">
       Footer
     </h2>
 
-    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-8 lg:px-8">
+    <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-8 lg:px-8">
       <div className="md:flex md:items-center md:justify-between">
         <div className="flex space-x-6 md:order-2">
           <a href="#" className="text-gray-100 hover:text-gray-300">
             <span className="sr-only">Facebook</span>
             <svg
-              className="h-6 w-6"
+              className="w-6 h-6"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true">
@@ -26,7 +26,7 @@ export const Footer = () => (
           <a href="#" className="text-gray-100 hover:text-gray-300">
             <span className="sr-only">Twitter</span>
             <svg
-              className="h-6 w-6"
+              className="w-6 h-6"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true">
@@ -34,7 +34,7 @@ export const Footer = () => (
             </svg>
           </a>
         </div>
-        <p className="mt-8 text-base text-gray-100 md:mt-0 md:order-1">
+        <p className="mt-8 text-base text-white md:mt-0 md:order-1">
           © {new Date().getFullYear()} Not in our Honor. All rights reserved.
         </p>
       </div>

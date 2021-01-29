@@ -48,9 +48,7 @@ export const Nav = () => {
     <div className="relative z-20">
       <div className="relative">
         <div className="py-4 bg-red-500">
-          <nav
-            className="relative flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-6"
-            aria-label="Global">
+          <nav className="relative flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-6">
             <div className="flex items-center flex-1">
               <div className="flex items-center justify-between w-full md:w-auto">
                 <Link href="/">

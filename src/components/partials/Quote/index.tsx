@@ -9,7 +9,11 @@ export const Quote = () => (
           />
           <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:p-0">
             <div className="flex flex-col flex-wrap overflow-hidden shadow-xl aspect-w-10 aspect-h-10 rounded-xl justify-items-center">
-              <img src="/images/kansascity-10.jpg" className="w-full h-auto" />
+              <img
+                src="/images/kansascity-10.jpg"
+                className="w-full h-auto"
+                alt="List: Things I love about Kansas City: Superbowl champs, world series champs, world's loudest fans, world's best bbq, fountains, tailgating. Slashed out: That racist tomahawk chop. Ending: Love your city enough to change."
+              />
             </div>
           </div>
         </div>
