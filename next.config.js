@@ -28,4 +28,5 @@ module.exports = withMDX({
       '/': {page: './'},
     }
   },
+  target: 'serverless',
 })
