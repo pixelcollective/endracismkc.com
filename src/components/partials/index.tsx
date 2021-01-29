@@ -1,0 +1,6 @@
+export {Content} from './Content'
+export {Footer} from './Footer'
+export {Header} from './Header'
+export {Nav} from './Nav'
+export {Quote} from './Quote'
+export {Form} from './Form'
