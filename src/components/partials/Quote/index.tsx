@@ -12,6 +12,8 @@ export const Quote = () => (
               <img
                 src="/images/kansascity-10.jpg"
                 className="w-full h-auto"
+                width="600px"
+                height="600px"
                 alt="List: Things I love about Kansas City: Superbowl champs, world series champs, world's loudest fans, world's best bbq, fountains, tailgating. Slashed out: That racist tomahawk chop. Ending: Love your city enough to change."
               />
             </div>
