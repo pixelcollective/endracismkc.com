@@ -2,8 +2,9 @@ const withMDX = require('@next/mdx')
 
 module.exports = withMDX({
   env: [],
-  poweredByHeader: true,
+  poweredByHeader: false,
   compress: true,
+  target: 'serverless',
   devIndicators: {
     buildActivity: false,
     autoPrerender: false,
@@ -28,5 +29,4 @@ module.exports = withMDX({
       '/': {page: './'},
     }
   },
-  target: 'serverless',
 })
