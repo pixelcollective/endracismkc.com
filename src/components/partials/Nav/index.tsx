@@ -58,21 +58,16 @@ export const Nav = () => {
                     EndRacismKC
                   </span>
                 </Link>
-                {/* <Hamburger toggle={toggle} visible={visible} /> */}
+                <Hamburger toggle={toggle} visible={visible} />
               </div>
               <div className="hidden space-x-8 md:flex md:ml-10">
                 <Link href="/about">
                   <a
                     href="#"
-                    className="text-base font-medium text-white hover:text-gray-300">
-                    The letter
+                    className="text-base font-medium text-gray-200 transition-all duration-200 hover:text-white">
+                    Read the letter
                   </a>
                 </Link>
-                <a
-                  href="#"
-                  className="text-base font-medium text-white hover:text-gray-300">
-                  Take Action
-                </a>
               </div>
             </div>
             <div className="hidden md:flex md:items-center md:space-x-6">
@@ -85,7 +80,7 @@ export const Nav = () => {
           </nav>
         </div>
 
-        {/* <Mobile visible={visible} toggle={toggle} /> */}
+        <Mobile visible={visible} toggle={toggle} />
       </div>
     </div>
   )
@@ -144,48 +139,25 @@ export const Mobile = ({visible, toggle}) => {
           aria-orientation="vertical"
           aria-labelledby="main-menu">
           <div className="px-2 space-y-1" role="none">
-            <a
-              href="#"
-              className="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
-              role="menuitem">
-              Product
-            </a>
-            <a
-              href="#"
-              className="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
-              role="menuitem">
-              Features
-            </a>
-            <a
-              href="#"
-              className="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
-              role="menuitem">
-              Marketplace
-            </a>
-            <a
-              href="#"
-              className="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
-              role="menuitem">
-              Company
-            </a>
-          </div>
-          <div role="none" className="px-5 mt-6">
-            <a
-              href="#"
-              className={classnames(
-                transitionClasses,
-                `block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-red-500 to-red-600 text-white font-medium hover:from-red-600 hover:to-red-700`,
-              )}>
-              Start free trial
-            </a>
-          </div>
-          <div role="none" className="px-5 mt-6">
-            <p className="text-base font-medium text-center text-gray-500">
-              Existing customer?{' '}
-              <a href="#" className="text-gray-900 hover:underline">
-                Login
+            <Link href="/about">
+              <a
+                className="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
+                role="menuitem">
+                Read the letter
               </a>
-            </p>
+            </Link>
+          </div>
+          <div role="none" className="px-5 mt-6">
+            <Link href="/take-action">
+              <a
+                href="#"
+                className={classnames(
+                  transitionClasses,
+                  `block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-red-500 to-red-600 text-white font-medium hover:from-red-600 hover:to-red-700`,
+                )}>
+                Take action
+              </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import {Content} from 'components/partials'
 
 export const Letter = () => (
@@ -36,12 +35,11 @@ export const Letter = () => (
       “Trail of Tears.”
     </p>
     <figure className="h-auto max-w-full">
-      <Image
+      <img
         className="object-cover object-left-bottom rounded-lg shadow-md filter-grayscale"
         src="/images/tomahawk.jpg"
         alt={`The "Tomahawk Chop"`}
         width="1600"
-        layout="responsive"
         height="900"
       />
       <figcaption className="text-gray-400">

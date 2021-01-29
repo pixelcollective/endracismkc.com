@@ -65,10 +65,13 @@ const CTA = () => (
         <form className="p-0 m-0" acceptCharset="UTF-8">
           <div className="grid grid-cols-1 gap-6 font-light text-black">
             <div>
+              <span className="text-white">Dummy form // WIP</span>
+            </div>
+            <div>
               <label
                 htmlFor="email"
                 className="block text-sm font-medium text-white">
-                Who we callin yr boi
+                Name
               </label>
               <div className="mt-1">
                 <input
@@ -85,7 +88,7 @@ const CTA = () => (
               <label
                 htmlFor="email"
                 className="block text-sm font-medium text-white">
-                Careful with the fake boys I know regex
+                Email
               </label>
               <div className="relative mt-1 rounded-md shadow-sm">
                 <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">

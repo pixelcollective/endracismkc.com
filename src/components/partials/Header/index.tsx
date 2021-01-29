@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 const Tag = () => (
   <a
     href="#"
@@ -30,8 +28,7 @@ const Tag = () => (
 
 const Background = () => (
   <div className="absolute w-full h-screen min-w-full min-h-screen bg-red-800 -z-10">
-    <Image
-      layout="fill"
+    <img
       src="/images/run-it-back.jpg"
       className="top-0 block object-cover w-full h-screen min-w-full min-h-screen opacity-50 filter-blur"
     />
