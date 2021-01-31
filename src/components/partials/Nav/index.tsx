@@ -45,7 +45,7 @@ export const Nav = () => {
   const toggle = () => setVisible(!visible)
 
   return (
-    <div className="relative z-20">
+    <div className="relative z-10">
       <div className="relative">
         <div className="py-4 bg-red-500">
           <nav className="relative flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-6">

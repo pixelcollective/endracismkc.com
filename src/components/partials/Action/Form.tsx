@@ -1,5 +1,4 @@
 import React, {FunctionComponent, useState} from 'react'
-import {motion} from 'framer-motion'
 import axios from 'axios'
 import {useForm} from 'react-hook-form'
 import { Modal } from 'components/Modal'
@@ -28,28 +27,14 @@ export const Form: FunctionComponent<FormProps> = ({id}) => {
   const {register, handleSubmit, errors} = useForm<Inputs>()
 
   const onSubmit = data => {
-    !id ? console.log('no form id supplied') : axios({
+    if (!id) {
+      return
+    }
+
+    axios({
       method: 'post',
-      url: `https://actionnetwork.org/api/v2/forms/${id}/submissions`,
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      data: JSON.stringify({
-        website: 'https://endracismkc.org',
-        person: {
-          email_addresses: [
-            {
-              address: data.email,
-              status: 'subscribed',
-            },
-          ],
-        },
-        triggers: {
-          autoresponse: {
-            enabled: false,
-          },
-        },
-      }),
+      url: `/api/form`,
+      data: { id, data },
     })
       .then(res => {
         if (res.status == 200) {
@@ -70,7 +55,7 @@ export const Form: FunctionComponent<FormProps> = ({id}) => {
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="flex flex-col justify-center w-full">
             <Input
-              name="first_name"
+              name="firstName"
               placeholder="First name"
               type="text"
               register={register({ required: true })}
@@ -78,7 +63,7 @@ export const Form: FunctionComponent<FormProps> = ({id}) => {
 
             <div className="mt-3">
               <Input
-                name="last_name"
+                name="lastName"
                 placeholder="Last name"
                 type="text"
                 register={register({ required: true })}

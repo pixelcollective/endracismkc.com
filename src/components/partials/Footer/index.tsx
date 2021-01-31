@@ -1,6 +1,6 @@
 export const Footer = () => (
   <footer
-    className="relative z-10 bg-primary-default"
+    className="relative bg-primary-default"
     aria-labelledby="footerHeading">
     <h2 id="footerHeading" className="sr-only">
       Footer

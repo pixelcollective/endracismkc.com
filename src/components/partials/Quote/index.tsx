@@ -1,6 +1,6 @@
 export const Quote = () => (
   <div className="pt-16 bg-white lg:py-24">
-    <div className="flex flex-col flex-wrap pb-16 bg-gray-900 lg:pb-0 lg:z-10 lg:relative">
+    <div className="flex flex-col flex-wrap pb-16 bg-gray-900 lg:pb-0 lg:relative">
       <div className="order-2 md:order-1 lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
         <div className="relative lg:-my-8">
           <div
