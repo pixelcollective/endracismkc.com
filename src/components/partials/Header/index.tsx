@@ -33,7 +33,7 @@ const Tag = ({name, description}) => (
 )
 
 const Background = () => (
-  <div className="absolute w-full h-screen min-w-full min-h-screen bg-gradient-to-b from-red-700 to-red-900 -z-10">
+  <div className="absolute z-0 w-full h-screen min-w-full min-h-screen bg-gradient-to-b from-red-700 to-red-900">
     <img
       src="/images/run-it-back.jpg"
       width="100vw"
@@ -53,7 +53,7 @@ export const Header: FunctionComponent<{
     <div className="h-full mx-auto">
       <Background />
 
-      <div className="container relative z-10 grid pt-12 pb-24 mx-auto lg:pb-32">
+      <div className="container relative z-0 grid pt-12 pb-24 mx-auto lg:pb-32">
         <div className="flex items-center px-8 mx-auto sm:text-center lg:text-left">
           <div className="pt-0 pb-16 md:pt-24">
             {!hideCtaTag && (

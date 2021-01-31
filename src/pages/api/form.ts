@@ -1,5 +1,9 @@
 import axios from 'axios'
+import {NextApiResponse} from 'next'
 
+/**
+ * Axios handler
+ */
 const instance = axios.create({
   baseURL: 'https://actionnetwork.org/api/v2',
   headers: {
@@ -8,6 +12,9 @@ const instance = axios.create({
   },
 })
 
+/**
+ * Format OSDI signature
+ */
 const makeSignature = data => ({
   website: 'https://endracismkc.org',
   person: {
@@ -27,12 +34,15 @@ const makeSignature = data => ({
   },
 })
 
+/**
+ * Format AN endpoint
+ */
 const signatureEndpoint = id => `/petitions/${id}/signatures`
 
 /**
- * Sign petition request
+ * Process signature
  */
-export default async ({body: signature}, res) => {
+export default async ({body: signature}, res: NextApiResponse) => {
   if (!process.env.ACTION_NETWORK_API_SECRET) {
     console.error('missing an key')
   }
@@ -43,15 +53,13 @@ export default async ({body: signature}, res) => {
     .post(signatureEndpoint(signature.id), makeSignature(signature.data))
     .then(actionNetworkRes => {
       if (actionNetworkRes.status == 200) {
-        console.log(actionNetworkRes.data)
-
         res.status(200).end()
       }
     })
     .catch(err => {
       console.error(err)
-
-      res.status(500).err(err).end()
+      res.statusMessage = err
+      res.status(500).end()
     })
 
   return res

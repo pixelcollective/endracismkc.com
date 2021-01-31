@@ -67,9 +67,9 @@ const Modal: FunctionComponent<IModal> = ({
   className,
 }) => (
   <div
-    className={`fixed top-0 bottom-0 left-0 right-0 z-50 ${className}`}>
-    <div className="flex items-center justify-center w-full h-full">
-      <div className="absolute w-full h-screen transition-all duration-200 bg-gray-800 opacity-75"></div>
+    className={`${className}`}>
+    <div className="fixed top-0 bottom-0 left-0 right-0 flex items-center justify-center w-full h-full">
+      <div className="absolute w-full h-screen transition-all duration-200 bg-gray-800 opacity-90"></div>
 
       <div className="z-30 px-4 pt-5 pb-4 overflow-hidden transition-all transform bg-white rounded-lg shadow-xl pointer-events-auto sm:max-w-sm sm:w-full sm:p-6">
         <div>

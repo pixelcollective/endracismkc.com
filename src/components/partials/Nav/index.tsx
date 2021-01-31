@@ -62,7 +62,7 @@ export const Nav = () => {
                 <Link href="/about">
                   <a
                     href="#"
-                    className="text-base font-medium text-gray-200 transition-all duration-200 hover:text-white">
+                    className="text-base font-medium text-gray-100 transition-all duration-200 hover:text-white">
                     Read the letter
                   </a>
                 </Link>
@@ -95,14 +95,13 @@ export const Mobile = ({visible, toggle}) => {
   return (
     <div
       className={classnames(
+        visibility,
         transitionClasses,
-        'absolute inset-x-0 top-0 p-1 transform origin-top md:hidden',
+        'absolute inset-x-0 top-0 p-1 transform origin-top md:hidden z-50',
       )}>
       <div
         className={classnames(
-          visibility,
-          transitionClasses,
-          `rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden`,
+          `relative rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden`,
         )}>
         <div className="flex items-center justify-between px-5 pt-3">
           <div className="font-medium tracking-wider text-gray-800">
@@ -112,7 +111,7 @@ export const Mobile = ({visible, toggle}) => {
             <button
               type="button"
               onClick={toggle}
-              className="relative z-30 inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600">
+              className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600">
               <span className="sr-only">Close menu</span>
               <svg
                 className="w-6 h-6"
