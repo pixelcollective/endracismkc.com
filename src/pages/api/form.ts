@@ -37,14 +37,20 @@ export default async ({body: signature}, res) => {
     console.error('missing an key')
   }
 
+  console.log('request received', signature)
+
   await instance
     .post(signatureEndpoint(signature.id), makeSignature(signature.data))
     .then(actionNetworkRes => {
       if (actionNetworkRes.status == 200) {
+        console.log(actionNetworkRes.data)
+
         res.status(200).end()
       }
     })
     .catch(err => {
+      console.error(err)
+
       res.status(500).err(err).end()
     })
 
