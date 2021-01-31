@@ -1,13 +1,16 @@
 import {Footer, Nav, Header} from 'components/partials'
 import {Letter} from 'content/Letter'
 
-export const Home = () => (
+export const About = () => (
   <>
     <Nav />
-    <Header />
+    <Header
+      pageTitle="About EndRacismKC"
+      lead="Justifying the maintenance of racist mascots because a very small number of Native Americans accept it, when a majority of us vehemently oppose them is shocking. A recent study found the more connected the individual Native is with their culture (language, traditions, ceremonies), the stronger their opposition."
+    />
     <Letter />
     <Footer />
   </>
 )
 
-export default Home
+export default About

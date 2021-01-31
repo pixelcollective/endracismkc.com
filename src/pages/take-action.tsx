@@ -1,12 +1,12 @@
-import {Form, Footer, Nav, Header} from 'components/partials'
+import {Action, Footer, Nav, Header} from 'components/partials'
 
-export const Home = () => (
+export const TakeAction = () => (
   <>
     <Nav />
-    <Header />
-    <Form />
+    <Header hideCtaTag={true} />
+    <Action />
     <Footer />
   </>
 )
 
-export default Home
+export default TakeAction

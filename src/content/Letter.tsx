@@ -25,7 +25,9 @@ export const Letter = () => (
       This is directly in opposition to the recent statements made by the NFL,
       team owners, management, and players about social justice.
     </p>
+
     <h2>There is no honor in imagery of "The Chief"</h2>
+
     <p>
       Additionally, banning these behaviors is unlikely to stop devout fans from
       continuing to don headdresses and face paint in the parking lot, nor will
@@ -34,6 +36,7 @@ export const Letter = () => (
       years, such as, “send them back to the reservation,” “scalp them,” and
       “Trail of Tears.”
     </p>
+
     <figure className="h-auto max-w-full">
       <img
         className="object-cover object-left-bottom rounded-lg shadow-md filter-grayscale"
