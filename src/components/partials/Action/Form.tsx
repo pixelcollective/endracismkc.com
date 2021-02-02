@@ -71,7 +71,7 @@ export const Form: FunctionComponent<FormProps> = ({id}) => {
               />
             </div>
 
-            <Submit className="justify-center px-3 py-2 mt-4 text-lg font-bold tracking-wider text-center text-white transition-all duration-200 bg-red-600 border rounded shadow-primary hover:transition-all transition-ease-in transition-ease-in-out focus:outline-none hover:bg-red-500">Take Action</Submit>
+            <Submit>Take Action</Submit>
             <span className="mt-4 text-xs text-gray-600">The Not in our Honor Coalition may use your email to contact you about this and other important indigenous campaigns.</span>
           </div>
         </form>

@@ -4,7 +4,6 @@ module.exports = {
   important: true,
   purge: {
     content: [resolve(__dirname, 'src/**/*.ts*')],
-    safeList: ['can_embed'],
   },
   future: {
     defaultLineHeights: true,
@@ -36,6 +35,9 @@ module.exports = {
                 color: theme('colors.red.700'),
               },
             },
+            blockquote: {
+              borderLeftColor: theme('colors.red.500'),
+            },
           },
         },
       }),
@@ -54,6 +56,10 @@ module.exports = {
         none: 'none',
         blur: 'blur(20px)',
       },
+    },
+  },
+  variants: {
+    extend: {
     },
   },
   plugins: [
