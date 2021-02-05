@@ -1,4 +1,11 @@
-import {Action, Footer, Nav, Header, Quote} from 'components/partials'
+import {
+  Action,
+  Attribution,
+  Footer,
+  Nav,
+  Header,
+  Quote,
+} from 'components/partials'
 import {Letter} from 'content/Letter'
 
 export const Home = () => (
@@ -8,6 +15,7 @@ export const Home = () => (
     <Action />
     <Quote />
     <Letter />
+    <Attribution />
     <Footer />
   </>
 )

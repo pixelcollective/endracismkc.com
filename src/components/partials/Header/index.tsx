@@ -1,5 +1,6 @@
 import {FunctionComponent} from 'react'
 import Link from 'next/link'
+import {External} from '../../svg/External'
 
 const Chevron = () => (
   <svg
@@ -66,8 +67,11 @@ export const Header: FunctionComponent<{
             )}
 
             <h1 className="max-w-6xl my-4 text-4xl font-medium text-transparent sm:text-6xl lg:mt-6 xl:text-6xl bg-clip-text bg-gradient-to-r from-red-200 to-gray-100">
-              <span className="inline-block mb-4 text-2xl tracking-wider md:text-4xl">
+              <span className="inline-flex flex-row mb-4 text-2xl tracking-wider text-white md:text-3xl">
                 {siteTitle ?? 'Not In Our Honor Coalition'}
+                <a href="https://notinourhonor.com">
+                  <External className="mt-1" w={7} h={7} color="white" />
+                </a>
               </span>
 
               <span className="block font-extrabold text-transparent bg-white bg-clip-text">

@@ -59,8 +59,7 @@ module.exports = {
     },
   },
   variants: {
-    extend: {
-    },
+    extend: {},
   },
   plugins: [
     require('@tailwindcss/ui'),
