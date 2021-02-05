@@ -2,14 +2,10 @@ import {FunctionComponent} from 'react'
 
 export const External: FunctionComponent<{
   color?: string,
-  w?: number,
-  h?: number,
   className?: string,
-}> = ({color, w, h, className}) => (
+}> = ({className}) => (
   <svg
-    className={`${w ? `w-${w}` : `w-5`} ${h ? `h-${h}` : `h-5`} ml-3 -mr-1 ${
-      className ?? ``
-    } ${color ?? `text-gray-400`}`}
+    className={`ml-3 -mr-1 ${className ?? `w-5 h-5 text-gray-400`}`}
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 20 20"
     fill="currentColor">
