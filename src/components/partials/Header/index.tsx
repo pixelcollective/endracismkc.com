@@ -70,7 +70,7 @@ export const Header: FunctionComponent<{
               <span className="inline-flex flex-row mb-4 text-2xl tracking-wider text-white md:text-3xl">
                 {siteTitle ?? 'Not In Our Honor Coalition'}
                 <a href="https://notinourhonor.com">
-                  <External className="mt-1" w={7} h={7} color="white" />
+                  <External className="mt-1" w={7} h={7} color="text-white" />
                 </a>
               </span>
 
