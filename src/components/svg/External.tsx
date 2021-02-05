@@ -1,4 +1,11 @@
-export const External = ({color, w, h, className, ...props}) => (
+import {FunctionComponent} from 'react'
+
+export const External: FunctionComponent<{
+  color: string,
+  w: number,
+  h: number,
+  className: string,
+}> = ({color, w, h, className, ...props}) => (
   <svg
     className={`${w ? `w-${w}` : `w-5`} ${h ? `h-${h}` : `h-5`} ml-3 -mr-1 ${
       className ?? ``
